@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace FizzBuzz{
+    public class FizzBuzz{
+        public static void Main(){
+            Console.WriteLine("Hello World");
+            
+        }
+    }
+    
+    public static string PrintFizzBuzz(int num)
+    {
+        
+
+    }
+    
+}
