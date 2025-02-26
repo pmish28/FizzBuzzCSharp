@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace FizzBuzz
+﻿namespace FizzBuzz
 {
     public class FizzBuzz
     {
@@ -13,26 +11,22 @@ namespace FizzBuzz
         {
             for (int num = 1; num <= 100; num++)
             {
-                switch (num % 15)
+                string output = "";
+                if (num % 3 == 0)
                 {
-
-                    case 0:
-                        Console.WriteLine("FizzBuzz");
-                        break;
-                    case 3:
-                        Console.WriteLine("Fizz");
-                        break;
-                    case 5:
-                        Console.WriteLine("Buzz");
-                        break;
-                    default:
-                        Console.WriteLine(num);
-                        break;
+                    output += "Fizz";
                 }
-
+                if (num % 5 == 0)
+                {
+                    output += "Buzz";
+                }                
+                if(output == "")
+                {
+                    output = Convert.ToString(num);
+                }
+                Console.WriteLine(output);
             }
         }
     }
-
 }
 
